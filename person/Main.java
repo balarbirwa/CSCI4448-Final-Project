@@ -5,6 +5,23 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Enter your age: ");
+        int age = scanner.nextInt();
+        scanner.nextLine(); // consume the remaining newline
+
+        System.out.println("Enter your height in cm: ");
+        int height = scanner.nextInt();
+        scanner.nextLine(); // consume the remaining newline
+
+        System.out.println("Enter your gender: ");
+        String gender = scanner.nextLine();
+
+        System.out.println("Enter your star sign: ");
+        String sign = scanner.nextLine();
+
+        System.out.println("Enter your job: ");
+        String job = scanner.nextLine();
+
         // Collecting user inputs for each interest field
         System.out.println("Enter your creativity interest: ");
         String creativity = scanner.nextLine();
@@ -36,17 +53,16 @@ public class Main {
         System.out.println("Enter your hometown: ");
         String hometown = scanner.nextLine();
 
-        System.out.println("Enter your job: ");
-        String job = scanner.nextLine();
+        // System.out.println("Enter your job: ");
+        // String job = scanner.nextLine();
 
         // Create an instance of Interests with the user input
         Interests myInterests = new Interests(creativity, sports, food, hobby, music, 
                                               favoriteBooks, favoriteMovies, travelDestinations, 
                                               personalityTraits, hometown, job);
 
-        // Display the entered interests
-        System.out.println("\nHere are your interests:");
-        System.out.println(myInterests);
+        Person person = new Person(age, height, gender, sign, job, myInterests);
+
 
         // Display available traits
         List<Trait> allTraits = TraitList.getAllTraits();
@@ -71,6 +87,12 @@ public class Main {
                 }
             }
         }
+        System.out.println("\nHere is your profile:");
+        System.out.println(person);
+
+        // Display the entered interests
+        System.out.println("\nHere are your interests:");
+        System.out.println(myInterests);
 
         scanner.close();
     }
