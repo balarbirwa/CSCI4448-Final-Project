@@ -73,8 +73,8 @@ public class Main {
         Person person = new Person(age, height, gender, sign, job, myInterests);
 
         // Display the entered interests
-        System.out.println(ANSI_YELLOW + "\nHere are your interests:" + ANSI_RESET);
-        System.out.println(ANSI_GREEN + myInterests + ANSI_RESET);
+        // System.out.println(ANSI_YELLOW + "\nHere are your interests:" + ANSI_RESET);
+        // System.out.println(ANSI_GREEN + myInterests + ANSI_RESET);
 
         // Display available traits
         List<Trait> allTraits = TraitList.getAllTraits();
@@ -100,7 +100,16 @@ public class Main {
             }
         }
         System.out.println("\nHere is your profile:");
-        System.out.println(person);
+        System.out.println("+----------------+-----------------------+");
+        System.out.printf("| %-14s | %-21s |\n", "Attribute", "Value");
+        System.out.println("+----------------+-----------------------+");
+        System.out.printf("| %-14s | %-21d |\n", "Age", person.getAge());
+        System.out.printf("| %-14s | %-21d |\n", "Height", person.getHeight());
+        System.out.printf("| %-14s | %-21s |\n", "Gender", person.getGender());
+        System.out.printf("| %-14s | %-21s |\n", "Star Sign", person.getStarSign());
+        System.out.printf("| %-14s | %-21s |\n", "Job", person.getJob());
+        // Add more lines here for each attribute
+        System.out.println("+----------------+-----------------------+");
 
         // Display the entered interests
         System.out.println("\nHere are your interests:");
