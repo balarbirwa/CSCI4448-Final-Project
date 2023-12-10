@@ -8,8 +8,8 @@ public class Person extends Profile {
     }
 
     // Parameterized constructor
-    public Person(int age, int height, String gender, String sign, String job, Interests interests) {
-        super(age, height, gender, sign, job); // Calls the parameterized constructor of Profile
+    public Person(String name, int age, int height, String gender, String sign, Interests interests) {
+        super(name, age, height, gender, sign); // Pass name to Profile
         this.interests = interests;
     }
 
