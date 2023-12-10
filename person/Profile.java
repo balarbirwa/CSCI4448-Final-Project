@@ -1,14 +1,14 @@
 public class Profile {
 
+    private String name;
     private int age;
     private int height;
     private String gender;
     private String sign;
-    private String job;
 
     // Default constructor
     public Profile() {
-        this.job = "";
+        this.name = "";
         this.age = 0;
         this.height = 0;
         this.gender = "";
@@ -16,8 +16,8 @@ public class Profile {
     }
 
     // Parameterized constructor
-    public Profile(int a, int h, String g, String ss, String j) {
-        this.job = j;
+    public Profile(String n, int a, int h, String g, String ss) {
+        this.name;
         this.age = a;
         this.height = h;
         this.gender = g;
@@ -25,6 +25,12 @@ public class Profile {
     }
 
     // Getters
+
+    public String getName()
+    {
+        return name;
+    }
+
     public int getAge() {
         return age;
     }
@@ -46,6 +52,10 @@ public class Profile {
     }
 
     // Setters
+    public void setName(String n){
+        this.name = n;
+    }
+    
     public void setJob(String j) {
         this.job = j;
     }

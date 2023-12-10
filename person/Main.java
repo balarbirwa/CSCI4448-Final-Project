@@ -9,6 +9,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Enter your name: ");
+        String name = scanner.nextLine();
+
         System.out.println("Enter your age: ");
         int age = scanner.nextInt();
         scanner.nextLine(); // consume the remaining newline
@@ -74,7 +77,7 @@ public class Main {
                                               favoriteBooks, favoriteMovies, travelDestinations, 
                                               personalityTraits, hometown, job);
 
-        Person person = new Person(age, height, gender, sign, job, myInterests);
+        Person person = new Person(name, age, height, gender, sign, myInterests);
 
         StringBuilder userData = new StringBuilder();
         userData.append(age).append(",");
@@ -128,6 +131,7 @@ public class Main {
         System.out.println("+----------------+-----------------------+");
         System.out.printf("| %-14s | %-21s |\n", "Attribute", "Value");
         System.out.println("+----------------+-----------------------+");
+        System.out.printf("| %-14s | %-21d |\n", "Name", person.getName());
         System.out.printf("| %-14s | %-21d |\n", "Age", person.getAge());
         System.out.printf("| %-14s | %-21d |\n", "Height", person.getHeight());
         System.out.printf("| %-14s | %-21s |\n", "Gender", person.getGender());
