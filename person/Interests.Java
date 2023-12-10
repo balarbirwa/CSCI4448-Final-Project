@@ -29,6 +29,93 @@ public class Interests {
     }
 
     // Getters and setters for each field (not shown for brevity)
+    public String getCreativity() {
+        return creativity;
+    }
+
+    public void setCreativity(String creativity) {
+        this.creativity = creativity;
+    }
+
+    public String getSports() {
+        return sports;
+    }
+
+    public void setSports(String sports) {
+        this.sports = sports;
+    }
+    public String getFood() {
+        return food;
+    }
+
+    public void setFood(String food) {
+        this.food = food;
+    }
+
+    public String getHobby() {
+        return hobby;
+    }
+
+    public void setHobby(String hobby) {
+        this.hobby = hobby;
+    }
+
+    public String getMusic() {
+        return music;
+    }
+
+    public void setMusic(String music) {
+        this.music = music;
+    }
+
+    public String getFavoriteBooks() {
+        return favoriteBooks;
+    }
+
+    public void setFavoriteBooks(String favoriteBooks) {
+        this.favoriteBooks = favoriteBooks;
+    }
+
+    public String getFavoriteMovies() {
+        return favoriteMovies;
+    }
+
+    public void setFavoriteMovies(String favoriteMovies) {
+        this.favoriteMovies = favoriteMovies;
+    }
+
+    public String getTravelDestinations() {
+        return travelDestinations;
+    }
+
+    public void setTravelDestinations(String travelDestinations) {
+        this.travelDestinations = travelDestinations;
+    }
+
+    public String getPersonalityTraits() {
+        return personalityTraits;
+    }
+
+    public void setPersonalityTraits(String personalityTraits) {
+        this.personalityTraits = personalityTraits;
+    }
+
+    public String getHometown() {
+        return hometown;
+    }
+
+    public void setHometown(String hometown) {
+        this.hometown = hometown;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
 
     @Override
     public String toString() {
