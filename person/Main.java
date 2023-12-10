@@ -142,14 +142,12 @@ public class Main {
 
 
         try {
-            // Assuming 'userData.toString()' is the current user's data written to 'user.txt'
-            Files.write(Paths.get("user.txt"), userData.toString().getBytes());
-
-            // Now find compatibility
-            Compatibility.findCompatibility("user.txt", "users.txt");
+            CompatibilityCalculator calculator = new CompatibilityCalculator();
+            calculator.calculateCompatibility("user.txt", "users.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
+    
 
         scanner.close();
     }
