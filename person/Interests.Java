@@ -133,6 +133,23 @@ public class Interests {
                ",\n  Job: '" + job + '\'' +
                "\n}";
     }
+    public double calculateCompatibilityScore(Interests other) {
+        double score = 0;
+        double totalFields = 11; // total number of interest fields
+        if (!this.creativity.isEmpty() && this.creativity.equals(other.creativity)) score++;
+        if (!this.sports.isEmpty() && this.sports.equals(other.sports)) score++;
+        if (!this.food.isEmpty() && this.food.equals(other.food)) score++;
+        if (!this.hobby.isEmpty() && this.hobby.equals(other.hobby)) score++;
+        if (!this.music.isEmpty() && this.music.equals(other.music)) score++;
+        if (!this.favoriteBooks.isEmpty() && this.favoriteBooks.equals(other.favoriteBooks)) score++;
+        if (!this.favoriteMovies.isEmpty() && this.favoriteMovies.equals(other.favoriteMovies)) score++;
+        if (!this.travelDestinations.isEmpty() && this.travelDestinations.equals(other.travelDestinations)) score++;
+        if (!this.personalityTraits.isEmpty() && this.personalityTraits.equals(other.personalityTraits)) score++;
+        if (!this.hometown.isEmpty() && this.hometown.equals(other.hometown)) score++;
+        if (!this.job.isEmpty() && this.job.equals(other.job)) score++;
+
+        return (score / totalFields) * 100; // return percentage
+    }
 }
 
 

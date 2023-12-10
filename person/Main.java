@@ -140,6 +140,17 @@ public class Main {
         System.out.println("\nHere are your interests:");
         System.out.println(myInterests);
 
+
+        try {
+            // Assuming 'userData.toString()' is the current user's data written to 'user.txt'
+            Files.write(Paths.get("user.txt"), userData.toString().getBytes());
+
+            // Now find compatibility
+            Compatibility.findCompatibility("user.txt", "users.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         scanner.close();
     }
 }
