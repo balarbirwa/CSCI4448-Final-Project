@@ -72,9 +72,30 @@ public class Main {
 
         Person person = new Person(age, height, gender, sign, job, myInterests);
 
-        // Display the entered interests
-        // System.out.println(ANSI_YELLOW + "\nHere are your interests:" + ANSI_RESET);
-        // System.out.println(ANSI_GREEN + myInterests + ANSI_RESET);
+        StringBuilder userData = new StringBuilder();
+        userData.append(age).append(",");
+        userData.append(height).append(",");
+        userData.append(gender).append(",");
+        userData.append(sign).append(",");
+        userData.append(job).append(",");
+        userData.append(creativity).append(",");
+        userData.append(sports).append(",");
+        userData.append(food).append(",");
+        userData.append(hobby).append(",");
+        userData.append(music).append(",");
+        userData.append(favoriteBooks).append(",");
+        userData.append(favoriteMovies).append(",");
+        userData.append(travelDestinations).append(",");
+        userData.append(personalityTraits).append(",");
+        userData.append(hometown);
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("UserProfiles.csv", true))) {
+            writer.write(userData.toString());
+            writer.newLine(); // move to a new line for the next user
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         // Display available traits
         List<Trait> allTraits = TraitList.getAllTraits();
