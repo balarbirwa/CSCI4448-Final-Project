@@ -1,5 +1,4 @@
-
-import person.Interests;
+package person;
 
 public class Person extends Profile {
     private Interests interests;
