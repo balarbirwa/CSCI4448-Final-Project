@@ -19,3 +19,4 @@ public class Trait {
         return "Trait: " + traitName + ", Description: " + description;
     }
 }
+

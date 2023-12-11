@@ -1,4 +1,3 @@
-
 public class Interests {
     private String creativity;
     private String sports;
@@ -152,5 +151,3 @@ public class Interests {
         return (score / totalFields) * 100; // return percentage
     }
 }
-
-

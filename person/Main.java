@@ -5,6 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -133,7 +134,7 @@ public class Main {
         System.out.printf("| %-14s | %-21d |\n", "Height", person.getHeight());
         System.out.printf("| %-14s | %-21s |\n", "Gender", person.getGender());
         System.out.printf("| %-14s | %-21s |\n", "Star Sign", person.getStarSign());
-        System.out.printf("| %-14s | %-21s |\n", "Job", person.getJob());
+        //System.out.printf("| %-14s | %-21s |\n", "Job", person.getJob());
         // Add more lines here for each attribute
         System.out.println("+----------------+-----------------------+");
 
