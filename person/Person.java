@@ -23,6 +23,9 @@ public class Person extends Profile {
     }
 
     @Override
+    public String getName() {
+        return super.getName(); // Assuming the getName method is defined in the Profile class
+    }
     public String toString() {
         return "Person {" +
                "\n  Profile: " + super.toString() + // Calls toString of Profile class
