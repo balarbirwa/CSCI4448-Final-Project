@@ -1,3 +1,5 @@
+package person;
+
 public class Profile {
 
     private String name;
@@ -5,8 +7,6 @@ public class Profile {
     private int height;
     private String gender;
     private String sign;
-    private String job;
-
     // Default constructor
     public Profile() {
         this.name = "";
@@ -48,18 +48,11 @@ public class Profile {
         return sign;
     }
 
-    public String getJob() {
-        return job;
-    }
-
     // Setters
     public void setName(String n){
         this.name = n;
     }
-    
-    public void setJob(String j) {
-        this.job = j;
-    }
+
 
     public void setAge(int a) {
         this.age = a;
