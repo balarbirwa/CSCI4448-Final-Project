@@ -1,3 +1,6 @@
+
+import person.Interests;
+
 public class Person extends Profile {
     private Interests interests;
 

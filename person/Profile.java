@@ -5,6 +5,7 @@ public class Profile {
     private int height;
     private String gender;
     private String sign;
+    private String job;
 
     // Default constructor
     public Profile() {
@@ -17,7 +18,7 @@ public class Profile {
 
     // Parameterized constructor
     public Profile(String n, int a, int h, String g, String ss) {
-        this.name;
+        this.name = n;
         this.age = a;
         this.height = h;
         this.gender = g;
