@@ -70,8 +70,6 @@ public class Main {
         // System.out.println("Enter your job: ");
         // String job = scanner.nextLine();
         // System.out.println(ANSI_CYAN + "Enter your job: " + ANSI_RESET);
-        // String job = scanner.nextLine();
-
         // Create an instance of Interests with the user input
         Interests myInterests = new Interests(creativity, sports, food, hobby, music, 
                                               favoriteBooks, favoriteMovies, travelDestinations, 
@@ -104,7 +102,6 @@ public class Main {
         }
 
 
-        // Display available traits
         List<Trait> allTraits = TraitList.getAllTraits();
         System.out.println(ANSI_YELLOW + "\nAvailable Traits:" + ANSI_RESET);
         for (Trait trait : allTraits) {
