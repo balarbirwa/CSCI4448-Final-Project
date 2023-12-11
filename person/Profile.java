@@ -17,7 +17,7 @@ public class Profile {
 
     // Parameterized constructor
     public Profile(String n, int a, int h, String g, String ss) {
-        this.name;
+        this.name = n;
         this.age = a;
         this.height = h;
         this.gender = g;
