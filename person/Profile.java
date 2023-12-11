@@ -1,4 +1,3 @@
-package person;
 
 public class Profile {
 
