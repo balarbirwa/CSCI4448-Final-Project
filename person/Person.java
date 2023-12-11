@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 //import person.Interests;
 //import ./Interests;
+=======
+package person;
+>>>>>>> 497fedbc2bec479fd83b69216e0e6e22bf3507ae
 
 public class Person extends Profile {
     private Interests interests;
