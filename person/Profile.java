@@ -5,6 +5,7 @@ public class Profile {
     private int height;
     private String gender;
     private String sign;
+    private String job;
 
     // Default constructor
     public Profile() {

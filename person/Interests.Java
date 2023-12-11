@@ -1,3 +1,5 @@
+package person;
+
 public class Interests {
     private String creativity;
     private String sports;
